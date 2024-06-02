@@ -1,0 +1,114 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Impact", sans-serif;
+    --third-family: "Montserrat", sans-serif;
+    --fs-title-mob: 52px;
+    --flh-title-mob: 64px;
+    --fls-tittle-mob: 1.8px;
+
+	--black: #292929;
+	--accet-green: #00b068;
+	--white: #f0f0f0;
+	--light-grey: #e4e5e6;
+	--light-accent: #bcdfd1;
+
+}
+
+.section-footer {
+    padding-top: 80px;
+    padding-bottom: 24px;
+}
+
+.footer-logo {
+    margin-bottom: 32px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.footer-log-green {
+    color: var(--accet-green);
+}
+
+.footer-list-socials {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.footer-item-social {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    transition-property:  background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.footer-text-cpoyright {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+
+    .section-footer {
+        padding-top: 102px;
+        /* padding-bottom: 24px; */
+    }
+
+    .footer-list-socials {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    
+    }
+
+    .footer-text-cpoyright {
+        text-align: right;  
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .section-footer {
+        padding-top: 122px;
+    }
+
+    .footer-container-desktop-text {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+
+    .footer-list-socials {
+        margin-bottom: 0;
+        align-items: center;
+     
+    }
+
+    .footer-item-social:hover,
+    .footer-item-social:focus {
+        color:var(--accet-green);
+       
+    }
+  }

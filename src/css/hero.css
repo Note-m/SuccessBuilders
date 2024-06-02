@@ -1,0 +1,204 @@
+:root {
+	--black: #292929;
+	--accet-green: #00b068;
+	--white: #f0f0f0;
+	--light-grey: #e4e5e6;
+	--light-accent: #bcdfd1;
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Impact", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+}
+.hero-container {
+    min-width: 320px;
+    max-width: 360px;
+    background: url(../img/background/decor-bg-1.png) no-repeat top;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    padding-top: 96px;
+}
+.hero-img-desk{
+    display: none;
+}
+.hero-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.hero-title-accent{
+    color: var(--accet-green);
+}
+.hero-button {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 92px;
+    align-items: center;
+    background: transparent;
+    border: none;
+}
+.hero-button:hover .hero-button-bg{
+    background: var(--accet-green);
+}
+.hero-button-order {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    position: absolute;
+    margin-left: 40px;
+    z-index: 1; 
+}
+.hero-button-bg {
+    box-sizing: border-box;
+    width: 165px;
+    height: 92px;
+    top: 0px;
+    background: var(--light-accent);
+    border: 1px solid #000000;
+    border-radius: 16px;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.hero-moto{
+    margin-bottom: 56px;
+}
+.hero-moto-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.hero-moto-accent {
+    color: var(--accet-green);
+}
+.hero-button-arrow { 
+    fill: var(--accet-green);
+}
+.hero-social{
+    position: relative; 
+    left: 50%; 
+    right: 50%;
+    width: 100vw; 
+    margin-left: -50vw; 
+    margin-right: -50vw; 
+    background: var(--light-grey); 
+    box-sizing: border-box;   
+}
+.hero-social-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px;
+    gap: 24px;
+
+}
+.hero-social-target-link {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: var(--black);
+}
+.hero-social-target-link:hover{
+    color: var(--accet-green);
+}
+
+@media screen and (min-width: 768px) {
+    .hero-container {
+    max-width: 768px;
+    background-image: 
+    url(../img/hero/decor-hero-up-tab-1x.png), 
+    url(../img/hero/decor-hero-down-tab-1x.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position:right 32px top 16px, left 184px bottom 102px;
+    padding-bottom: 64px;
+}
+    .hero-title {
+        font-size: 136px;
+        line-height: 115%;
+        letter-spacing: 0.01em;
+        color: var(--black);
+    }
+    .hero-button {
+        width: 416px;
+        height: 96px;
+    }
+    .hero-button-order{
+        font-size: 20px;
+        line-height: 160%;
+    
+    }
+    .hero-button-bg {
+        border-radius: 16px;
+        width: 261px;
+        height: 96px;
+        border: none;
+    }
+    .hero-social-list{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+
+    .hero-moto-text {
+       font-size: 20px;
+        line-height: 160%;
+    }
+    .hero-img-desk{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-container {
+    max-width: 1280px;
+    background: url(../img/hero/decor-hero-up-desk-1x.png), 
+    url(../img/hero/decor-hero-down-desk-1x.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 32px top 18px, left 198px bottom 28px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+   .hero-img-desk{
+    border-radius: 16px;
+    width: 108px;
+    height: 108px;
+    display: inline-flex;
+   }
+   .hero-title{
+    padding-top: 72px;
+   }
+   
+   .hero-button{
+    margin-left: 72px;
+    margin-right: 136px;
+    
+
+   }
+  .hero-row{
+    display: flex;
+    padding-top: 80px;
+    
+  }
+   .hero-moto-text{
+    width: 592px;
+   }
+   
+}
+

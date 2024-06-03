@@ -1,7 +1,6 @@
-
- .reviews-list {
-   margin-bottom: 24px;
- }
+.reviews-list {
+  margin-bottom: 24px;
+}
 
 .reviews-title {
   font-family: 'Impact', sans-serif;
@@ -19,7 +18,6 @@
   padding: 32px;
   background-color: #e4e5e6;
   border-radius: 16px;
-    
 }
 
 .text-review {
@@ -74,8 +72,8 @@
 }
 
 .not-found {
-font-size: 20px;
-margin: 0 auto;
+  font-size: 20px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -85,15 +83,20 @@ margin: 0 auto;
     letter-spacing: 0.02em;
     margin-bottom: 60px;
   }
-
 }
 
 @media screen and (min-width: 1280px) {
   .swiper-wrapper {
     max-width: 1240px;
   }
+
   .reviews-title {
     margin-bottom: 80px;
+  }
+
+  .user-review {
+    min-height: 248px;
+    max-height: 248px;
   }
 
   .btn-prev,

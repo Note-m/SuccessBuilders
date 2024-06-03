@@ -83,19 +83,19 @@
   margin-bottom: 0;
 }
 
-ul {
+.about-me-education-list {
   list-style-type: none;
   padding: 0;
 }
 
-ul li {
+.about-me-education-list li {
   margin-bottom: 10px;
-  /* position: relative; */
-  /* padding-left: 20px; */
+  /* position: relative;
+    padding-left: 20px; */
   text-align: left;
 }
 
-ul li::before {
+.about-me-education-list li::before {
   content: '•';
   color: #00b068;
   position: absolute;

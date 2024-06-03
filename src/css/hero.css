@@ -10,7 +10,6 @@
 }
 .section-hero{
     padding-top: 16px;
-    
 }
 .hero-wrapper {
     min-width: 320px;
@@ -141,18 +140,6 @@
         background-repeat: no-repeat, no-repeat;
         background-position:top right, left 184px bottom 52px;
     }
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero-wrapper {
-        background-image: 
-            url(../img/hero/decor-hero-up-tab-2x.png),
-            url(../img/hero/decor-hero-down-tab-2x.png);
-            background-repeat: no-repeat, no-repeat;
-            background-position:top right, left 184px bottom 52px;
-        }
-    }
     .hero-title {
         font-size: 136px;
         line-height: 115%;
@@ -199,18 +186,6 @@
     flex-wrap: wrap;
     padding-top: 168px;
     }
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-wrapper {
-      background-image: 
-      url(../img/hero/decor-hero-up-desk-2x.png), 
-      url(../img/hero/decor-hero-down-desk-2x.png);
-      background-repeat: no-repeat, no-repeat;
-      background-position: right 32px top 18px, left 204px bottom 16px;
-    }
-  }
     .hero-container {
         padding-top: 16px;
     }

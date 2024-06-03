@@ -1,7 +1,7 @@
 const projects = [
   {
-    origin: './img/my-projects/power-2x.jpg',
-    preview: './img/my-projects/power-1x.jpg',
+    origin: '/src/img/my-projects/power-2x.jpg',
+    preview: '/src/img/my-projects/power-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'power pulse webservice',
   },
@@ -92,7 +92,7 @@ export const loadMoreProjects = event => {
           <h3 class="my-projects-name">${project.title.toLocaleUpperCase()}</h3>
           <a
             class="my-projects-btn-visit"
-            href="https://note-m.github.io/Web-project/"
+            href="https://note-m.github.io/project/"
             target="_blank"
             >VISIT<svg class="my-projects-icon" width="18" height="18">
               <use href="./img/icons.svg#my-projects-arrow"></use>

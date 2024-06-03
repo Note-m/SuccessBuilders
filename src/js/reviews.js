@@ -8,8 +8,8 @@ const BASE_URL = 'https://portfolio-js.b.goit.study/api';
 const galleryReviews = document.querySelector(".swiper-wrapper");
 const prevBtn = document.querySelector(".swiper-button-prev");
 const nextBtn = document.querySelector(".swiper-button-next");
-const iconPrev = prevBtn.querySelector(".icon-swipe");
-const iconNext = nextBtn.querySelector(".icon-swipe");
+const iconPrev = prevBtn.querySelector(".icon-swipe-prev use");
+const iconNext = nextBtn.querySelector(".icon-swipe-next use");
 
 let reviews;
 
@@ -60,8 +60,8 @@ const initReviews = async () => {
   } catch (error) {
     console.log(error);
     galleryReviews.innerHTML = "<p class='not-found'>Not found</p>";
-    disabledBtn(prevBtn, true);
-    disabledBtn(nextBtn, true);
+    disableBtn(prevBtn, true, iconPrev, "grey-prev");
+    disableBtn(nextBtn, true, iconNext, "grey-next");
   }
 };
 
@@ -97,18 +97,14 @@ const swiper = new Swiper(".swiper-container", {
       const slidesPerView = swiper.params.slidesPerView;
       const totalSlides = reviews.length;
 
-      console.log(`currentIndex: ${currentIndex}`);
-      console.log(`slidesPerView: ${slidesPerView}`);
-      console.log(`totalSlides: ${totalSlides}`);
-
       if (currentIndex === 0) {
-        disabledBtn(prevBtn, true);
+        disableBtn(prevBtn, true, iconPrev, "grey-prev");
       } else {
-        disabledBtn(prevBtn, false);
+        disableBtn(prevBtn, false, iconPrev, "black-prev");
       }
 
       if (currentIndex >= totalSlides - slidesPerView) {
-        disabledBtn(nextBtn, true);
+        disableBtn(nextBtn, true, iconNext, "grey-next");
         iziToast.info({
           title: 'Info',
           message: 'Sorry, no more reviews for now.',
@@ -116,33 +112,23 @@ const swiper = new Swiper(".swiper-container", {
           color: 'green'
         });
       } else {
-        disabledBtn(nextBtn, false);
+        disableBtn(nextBtn, false, iconNext, "black-next");
       }
     },
   },
 });
 
-const disabledBtn = (button, isDisabled) => {
+const disableBtn = (button, isDisabled, icon, iconName) => {
   button.disabled = isDisabled;
+  icon.setAttribute("href", `./img/icons.svg#${iconName}`);
   if (isDisabled) {
-    button.style.backgroundColor = "grey";
     button.style.cursor = "not-allowed";
-    if (button === prevBtn) {
-      iconPrev.style.stroke = "grey";
-    } else {
-      iconNext.style.stroke = "grey";
-    }
   } else {
-    button.style.backgroundColor = '';
-    button.style.cursor = '';
-    if (button === prevBtn) {
-      iconPrev.style.stroke = "#292929";
-    } else {
-      iconNext.style.stroke = "#292929";
-    }
+    button.style.cursor = "";
   }
 };
-disabledBtn(prevBtn, true);
+
+disableBtn(prevBtn, true, iconPrev, "grey-prev");
 
 prevBtn.addEventListener('click', () => {
   swiper.slidePrev();

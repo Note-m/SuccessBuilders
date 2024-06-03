@@ -8,7 +8,10 @@
   --second-family: "Impact", sans-serif;
   --third-family: "Montserrat", sans-serif;
 }
-.hero-container {
+.section-hero{
+    padding-top: 16px;
+}
+.hero-wrapper {
     min-width: 320px;
     max-width: 360px;
     background: url(../img/background/decor-bg-1.png) no-repeat top;
@@ -17,6 +20,7 @@
     align-items: stretch;
     gap: 40px;
     padding-top: 96px;
+    padding-bottom: 16px;
 }
 .hero-img-desk{
     display: none;
@@ -33,6 +37,12 @@
 .hero-title-accent{
     color: var(--accet-green);
 }
+.hero-row{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+  }
 .hero-button {
     display: inline-flex;
     justify-content: space-between;
@@ -63,10 +73,9 @@
     height: 92px;
     top: 0px;
     background: var(--light-accent);
-    border: 1px solid #000000;
     border-radius: 16px;
     position: relative;
-    z-index: -1;
+    /* z-index: 0; */
     
 }
 
@@ -120,7 +129,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .hero-container {
+    .hero-wrapper {
     max-width: 768px;
     background-image: 
     url(../img/hero/decor-hero-up-tab-1x.png), 
@@ -128,6 +137,7 @@
     background-repeat: no-repeat, no-repeat;
     background-position:right 32px top 16px, left 184px bottom 102px;
     padding-bottom: 64px;
+    
 }
     .hero-title {
         font-size: 136px;
@@ -166,7 +176,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .hero-container {
+    .hero-wrapper {
     max-width: 1280px;
     background: url(../img/hero/decor-hero-up-desk-1x.png), 
     url(../img/hero/decor-hero-down-desk-1x.png);

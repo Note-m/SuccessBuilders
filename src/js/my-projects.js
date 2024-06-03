@@ -1,7 +1,7 @@
 const projects = [
   {
-    origin: '../img/my-projects/power-2x.jpg',
-    preview: '../img/my-projects/power-1x.jpg',
+    origin: '../img/my-projects/power-2x.jpg 2x',
+    preview: '../img/my-projects/power-1x.jpg 1x',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'power pulse webservice',
   },
@@ -59,8 +59,8 @@ export const loadMoreProjects = event => {
         <picture>
           <source
             srcset="
-             ${project.preview} 1x,
-              ${project.origin} 2x
+             ${project.preview},
+              ${project.origin}
             "
             media="(min-width: 1280px)"
           />

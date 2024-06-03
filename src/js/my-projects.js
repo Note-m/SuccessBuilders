@@ -79,7 +79,7 @@ export const loadMoreProjects = event => {
             media="(max-width: 767px)"
           />
           <img
-            src="${project.preview}"
+            src="${project.preview} 1x"
             alt="${project.title.toLocaleUpperCase()}"
             class="projects-img"
             width="1008"

@@ -17,8 +17,8 @@ export function manageModal () {
         
         if(workTogetherInputEmail.value.trim() !== "" && workTogetherInputEmail.value.trim() !== " " ) {
             workTogetherErrorMessage.classList.remove("active")
-            if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(workTogetherInputEmail.value.trim()) === true) {
-                
+            if(/^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(workTogetherInputEmail.value.trim()) === true) {
+              // "^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
                 workTogetherEmailCkeckIcon.classList.remove("hidden")
                 workTogetherInputEmail.style.color ="black"
                 postToAdd.email = workTogetherInputEmail.value;
@@ -61,7 +61,7 @@ export function manageModal () {
                 
             }
             else {
-                workTogetherErrorMessage.innerHTML ="Olease input correct Email adress"
+                workTogetherErrorMessage.innerHTML ="Please input correct Email adress"
                 workTogetherInputEmail.style.color ="red"
                 workTogetherErrorMessage.classList.add("active")
             }

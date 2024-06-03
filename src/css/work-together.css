@@ -99,6 +99,7 @@
 }
 
 .work-together-input-message {
+  resize: none;
   margin-bottom: 4px;
   display: block;
   width: 100%;
@@ -237,8 +238,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .work-together-section {
+    padding-top: 0;
+  }
+
   .work-together-container {
-    background-image: url(../img/lets-work/decor/lets-work-tab-1x.png);
+    padding-top: 62px;
+    background-image: url(../img/lets-work/decor-lets-work-tab-1x.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: auto;
@@ -258,12 +264,12 @@
   }
 
   /* .work-together-picture {
-        position: absolute;
-        top: -25%;
-        right:0;
-        display: block;
-       
-    } */
+      position: absolute;
+      top: -25%;
+      right:0;
+      display: block;
+     
+  } */
 
   .work-together-title {
     margin-bottom: 60px;
@@ -299,10 +305,11 @@
 
 @media screen and (min-width: 1280px) {
   .work-together-container {
+    padding-top: 82px;
     background-image: url(../img/lets-work/decor-lets-work-desk-1x.png);
     background-repeat: no-repeat;
-    background-position: top -200px right;
-    /* background-size:auto; */
+    background-position: top right;
+    background-size: auto;
   }
 
   @media (min-device-pixel-ratio: 2),

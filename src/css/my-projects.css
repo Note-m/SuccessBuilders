@@ -89,6 +89,10 @@
   color: #00b068;
 }
 
+.my-projects-img {
+  border-radius: 16px;
+}
+
 .current {
   position: relative;
 }
@@ -131,6 +135,10 @@
 
   .my-projects-text {
     margin-top: 16px;
+  }
+
+  .my-projects-img {
+    border-radius: 25px;
   }
 
   .my-projects-name {

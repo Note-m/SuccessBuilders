@@ -84,7 +84,7 @@ export const loadMoreProjects = event => {
           <img
             src="${project.preview}"
             alt="${project.title.toLocaleUpperCase()}"
-            class="projects-img"
+            class="my-projects-img"
             width="1008"
             height="578"
           />

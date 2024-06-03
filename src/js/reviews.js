@@ -66,6 +66,20 @@ const initReviews = async () => {
 };
 
 const swiper = new Swiper(".swiper-container", {
+  breakpoints: {
+    1280: {
+      slidesPerView: 2,
+      spaceBetween: 32
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -80,12 +94,20 @@ const swiper = new Swiper(".swiper-container", {
   on: {
     slideChange: () => {
       const currentIndex = swiper.activeIndex;
+      const slidesPerView = swiper.params.slidesPerView;
+      const totalSlides = reviews.length;
+
+      console.log(`currentIndex: ${currentIndex}`);
+      console.log(`slidesPerView: ${slidesPerView}`);
+      console.log(`totalSlides: ${totalSlides}`);
+
       if (currentIndex === 0) {
         disabledBtn(prevBtn, true);
       } else {
         disabledBtn(prevBtn, false);
       }
-      if (currentIndex === reviews.length + 1) {
+
+      if (currentIndex >= totalSlides - slidesPerView) {
         disabledBtn(nextBtn, true);
         iziToast.info({
           title: 'Info',
@@ -97,20 +119,6 @@ const swiper = new Swiper(".swiper-container", {
         disabledBtn(nextBtn, false);
       }
     },
-  },
-   breakpoints: {
-    1280: {
-      slidesPerView: 2,
-      spaceBetween: 32
-     },
-     768: {
-      slidesPerView: 1,
-      spaceBetween: 10
-    },
-    360: {
-      slidesPerView: 1,
-      spaceBetween: 10
-    }
   },
 });
 
@@ -135,6 +143,7 @@ const disabledBtn = (button, isDisabled) => {
   }
 };
 disabledBtn(prevBtn, true);
+
 prevBtn.addEventListener('click', () => {
   swiper.slidePrev();
 });

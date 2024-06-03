@@ -88,3 +88,8 @@
 </symbol>
   </defs>
 </svg>
+<symbol id="icon-dark" viewBox="0 0 32 32">
+<path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
+
+

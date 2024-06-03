@@ -20,7 +20,7 @@
     <script type="module" crossorigin src="/project/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project/assets/vendor-43af55b9.js">
     <link rel="stylesheet" href="/project/assets/vendor-2715ca0a.css">
-    <link rel="stylesheet" href="/project/assets/index-e7d6ec32.css">
+    <link rel="stylesheet" href="/project/assets/index-cb99ad50.css">
   </head>
   <body>
     <header id="header" class="header">
@@ -28,9 +28,10 @@
     <a class="link-logo header-link-logo" href="./index.html"
       >Lloyd<span class="header-link-logo-text">Jefferson.</span></a
     >
-    <!-- Navigation menu -->
     <nav class="header-nav">
       <ul class="header-nav-list">
+        <div class="switch-btn">
+        </div>
         <li class="header-nav-item">
           <a class="header-nav-link" href="#about">About me</a>
         </li>
@@ -42,35 +43,34 @@
         </li>
       </ul>
     </nav>
-    <!-- Hamburger button -->
-    <div class="button-container">
-      <button
-        class="header-button hamburger menu-toggle js-open-menu"
-        type="button"
-        aria-expanded="false"
-        aria-controls="mobile menu"
-      >
-        <svg class="header-button-icon" width="32" height="32">
-          <use href="../img/icons.svg#header-burger-icon"></use>
-        </svg>
-      </button>
-    </div>
-    <!-- MOB menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <ul class="mob-menu-list">
-        <li class="mob-menu-item">
-          <a class="mob-menu-link" href="#about">About me</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="mob-menu-link" href="#projects">Projects</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="mob-menu-link" href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </div>
+    <button type="button" data-modal-open class="burger-menu js-open-menu">
+      <svg class="burger-icon" width="21" height="14">
+        <use href="/project/assets/icons-f4d9fa28.svg#header-burger-icon"></use>
+      </svg>
+    </button>
+    <button type="button" class="modal-close js-close-menu" data-modal-close>
+      <svg class="modal-close-icon" width="20" height="20">
+        <use href="/project/assets/icons-f4d9fa28.svg#close-btn-modal-icon"></use>
+      </svg>
+    </button>
   </div>
 </header>
+<div class="backdrop is-hidden" data-modal>
+  <div id="mobile-menu" class="menu-container js-menu-container"  >
+    <ul class="mob-menu-list">
+      <li class="mob-menu-item">
+        <a class="mob-menu-link" href="#about">About me</a>
+      </li>
+      <li class="mob-menu-item">
+        <a class="mob-menu-link" href="#projects">Projects</a>
+      </li>
+      <li class="mob-menu-item">
+        <a class="mob-menu-link" href="#contacts">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
 
     <section class="section section-hero">
@@ -919,7 +919,7 @@
 
 </footer>
 
-
+    
     
   </body>
 </html>

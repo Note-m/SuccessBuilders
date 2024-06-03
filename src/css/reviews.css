@@ -18,7 +18,6 @@
   padding: 32px;
   background-color: #e4e5e6;
   border-radius: 16px;
-  display: flex;
 }
 
 .text-review {
@@ -90,12 +89,16 @@
   .swiper-wrapper {
     max-width: 1240px;
   }
-
+ .swiper-slide {
+   display: flex !important;
+ }
   .reviews-title {
     margin-bottom: 80px;
   }
-
   .user-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 248px;
     max-height: 248px;
   }

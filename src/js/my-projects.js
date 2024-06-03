@@ -1,5 +1,17 @@
 import power2 from '../img/my-projects/power-2x.jpg';
 import power1 from '../img/my-projects/power-1x.jpg';
+import mimino2 from '../img/my-projects/mimino-2x.jpg';
+import mimino1 from '../img/my-projects/mimino-1x.jpg';
+import vyshyvanka2 from '../img/my-projects/vyshyvanka-2x.jpg';
+import vyshyvanka1 from '../img/my-projects/vyshyvanka-1x.jpg';
+import chego2 from '../img/my-projects/chego-2x.jpg';
+import chego1 from '../img/my-projects/chego-1x.jpg';
+import energy2 from '../img/my-projects/energy-2x.jpg';
+import energy1 from '../img/my-projects/energy-1x.jpg';
+import fruitbox2 from '../img/my-projects/fruitbox-2x.jpg';
+import fruitbox1 from '../img/my-projects/fruitbox-1x.jpg';
+import starlight2 from '../img/my-projects/starlight-2x.jpg';
+import starlight1 from '../img/my-projects/starlight-1x.jpg';
 
 const projects = [
   {
@@ -9,38 +21,38 @@ const projects = [
     title: 'power pulse webservice',
   },
   {
-    origin: 'img/my-projects/mimino-2x.jpg',
-    preview: 'img/my-projects/mimino-1x.jpg',
+    origin: mimino2,
+    preview: mimino1,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'mimino website',
   },
   {
-    origin: '../img/my-projects/vyshyvanka-2x.jpg',
-    preview: '../img/my-projects/vyshyvanka-1x.jpg',
+    origin: vyshyvanka2,
+    preview: vyshyvanka1,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'vyshyvanka vibes Landing Page',
   },
   {
-    origin: '../img/my-projects/chego-2x.jpg',
-    preview: '../img/my-projects/chego-1x.jpg',
+    origin: chego2,
+    preview: chego1,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'chego jewelry website',
   },
   {
-    origin: '../img/my-projects/energy-2x.jpg',
-    preview: '../img/my-projects/energy-1x.jpg',
+    origin: energy2,
+    preview: energy1,
     technologies: 'React, JavaScript, Node JS, Git',
-    title: 'energy flow webservice ',
+    title: 'energy flow webservice',
   },
   {
-    origin: '../img/my-projects/fruitbox-2x.jpg',
-    preview: '../img/my-projects/fruitbox-1x.jpg',
+    origin: fruitbox2,
+    preview: fruitbox1,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'fruitbox online store',
   },
   {
-    origin: '../img/my-projects/starlight-2x.jpg',
-    preview: '../img/my-projects/starlight-1x.jpg',
+    origin: starlight2,
+    preview: starlight1,
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'starlight studio landing page',
   },

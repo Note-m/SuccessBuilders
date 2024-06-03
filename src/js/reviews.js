@@ -70,6 +70,7 @@ const swiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoHeight: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
@@ -101,7 +102,15 @@ const swiper = new Swiper(".swiper-container", {
     1280: {
       slidesPerView: 2,
       spaceBetween: 32
+     },
+     768: {
+      slidesPerView: 1,
+      spaceBetween: 10
     },
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
   },
 });
 
@@ -125,7 +134,7 @@ const disabledBtn = (button, isDisabled) => {
     }
   }
 };
-
+disabledBtn(prevBtn, true);
 prevBtn.addEventListener('click', () => {
   swiper.slidePrev();
 });

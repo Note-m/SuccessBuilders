@@ -83,25 +83,25 @@
   margin-bottom: 0;
 }
 
-/* ul {
-    list-style-type: none;
-    padding: 0;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 ul li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
-    text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  text-align: left;
 }
 
 ul li::before {
-    content: '•';
-    color: #00B068;
-    position: absolute;
-    left: 0;
-    top: 0;
-} */
+  content: '•';
+  color: #00b068;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
 /*h2 {
     font-size: 24px;

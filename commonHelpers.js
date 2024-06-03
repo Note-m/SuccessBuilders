@@ -36,7 +36,7 @@ import{i as w,S as b}from"./assets/vendor-43af55b9.js";(function(){const t=docum
             media="(max-width: 767px)"
           />
           <img
-            src="${o.preview}"
+            src="${o.preview} 1x"
             alt="${o.title.toLocaleUpperCase()}"
             class="projects-img"
             width="1008"

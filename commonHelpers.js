@@ -39,7 +39,7 @@ import{i as v}from"./assets/vendor-f46bf14a.js";(function(){const s=document.cre
             href="https://note-m.github.io/Web-project/"
             target="_blank"
             >VISIT<svg class="my-projects-icon" width="18" height="18">
-              <use href="./img/icons.svg#my-projects-arrow"></use>
+              <use href="../img/icons.svg#my-projects-arrow"></use>
             </svg></a>
         </div>
       </li>`).join("");f.insertAdjacentHTML("beforeend",r),l+=p,g.style.color="#292929"}l>=m.length&&g.classList.add("is-hidden")};g.addEventListener("click",w);h();y();

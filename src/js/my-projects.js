@@ -1,7 +1,7 @@
 const projects = [
   {
-    origin: '/src/img/my-projects/power-2x.jpg',
-    preview: '/src/img/my-projects/power-1x.jpg',
+    origin: './img/my-projects/power-2x.jpg',
+    preview: './img/my-projects/power-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'power pulse webservice',
   },

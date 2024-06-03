@@ -1,43 +1,43 @@
 const projects = [
   {
-    origin: '../img/my-projects/power-2x.jpg',
-    preview: '../img/my-projects/power-1x.jpg',
+    origin: '/src/img/my-projects/power-2x.jpg',
+    preview: '/src/img/my-projects/power-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'power pulse webservice',
   },
   {
-    origin: '../img/my-projects/mimino-2x.jpg',
-    preview: '../img/my-projects/mimino-1x.jpg',
+    origin: '/src/img/my-projects/mimino-2x.jpg',
+    preview: '/src/img/my-projects/mimino-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'mimino website',
   },
   {
-    origin: '../img/my-projects/vyshyvanka-2x.jpg',
-    preview: '../img/my-projects/vyshyvanka-1x.jpg',
+    origin: '/src/img/my-projects/vyshyvanka-2x.jpg',
+    preview: './src/img/my-projects/vyshyvanka-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'vyshyvanka vibes Landing Page',
   },
   {
-    origin: '../img/my-projects/chego-2x.jpg',
-    preview: '../img/my-projects/chego-1x.jpg',
+    origin: '/src/img/my-projects/chego-2x.jpg',
+    preview: '/src/img/my-projects/chego-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'chego jewelry website',
   },
   {
-    origin: '../img/my-projects/energy-2x.jpg',
-    preview: '../img/my-projects/energy-1x.jpg',
+    origin: '/src/img/my-projects/energy-2x.jpg',
+    preview: '/src/img/my-projects/energy-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'energy flow webservice ',
   },
   {
-    origin: '../img/my-projects/fruitbox-2x.jpg',
-    preview: '../img/my-projects/fruitbox-1x.jpg',
+    origin: '/src/img/my-projects/fruitbox-2x.jpg',
+    preview: '/src/img/my-projects/fruitbox-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'fruitbox online store',
   },
   {
-    origin: '../img/my-projects/starlight-2x.jpg',
-    preview: '../img/my-projects/starlight-1x.jpg',
+    origin: '/src/img/my-projects/starlight-2x.jpg',
+    preview: '/src/img/my-projects/starlight-1x.jpg',
     technologies: 'React, JavaScript, Node JS, Git',
     title: 'starlight studio landing page',
   },
@@ -95,7 +95,7 @@ export const loadMoreProjects = event => {
             href="https://note-m.github.io/Web-project/"
             target="_blank"
             >VISIT<svg class="my-projects-icon" width="18" height="18">
-              <use href="../img/icons.svg#my-projects-arrow"></use>
+              <use href="/src/img/icons.svg#my-projects-arrow"></use>
             </svg></a>
         </div>
       </li>`

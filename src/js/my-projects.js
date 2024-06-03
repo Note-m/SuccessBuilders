@@ -12,6 +12,7 @@ import fruitbox2 from '../img/my-projects/fruitbox-2x.jpg';
 import fruitbox1 from '../img/my-projects/fruitbox-1x.jpg';
 import starlight2 from '../img/my-projects/starlight-2x.jpg';
 import starlight1 from '../img/my-projects/starlight-1x.jpg';
+import iconArrow from '../img/icons.svg';
 
 const projects = [
   {
@@ -110,7 +111,7 @@ export const loadMoreProjects = event => {
             href="https://note-m.github.io/project/"
             target="_blank"
             >VISIT<svg class="my-projects-icon" width="18" height="18">
-              <use href="../img/icons.svg#my-projects-arrow"></use>
+              <use href="${iconArrow}#my-projects-arrow"></use>
             </svg></a>
         </div>
       </li>`

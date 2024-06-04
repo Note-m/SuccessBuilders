@@ -1,37 +1,46 @@
-<header id="header" class="header">
-  <div class="container header-container">
+<div class="container">
+  <header id="header" class="header-container">
+   <div class="left-part">
     <a class="link-logo header-link-logo" href="./index.html"
-      >Lloyd<span class="header-link-logo-text">Jefferson.</span></a
-    >
-    <nav class="header-nav">
-      <ul class="header-nav-list">
-        <div class="switch-btn">
-        </div>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#about">About me</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <button type="button" data-modal-open class="burger-menu js-open-menu">
-      <svg class="burger-icon" width="21" height="14">
-        <use href="/img/icons.svg#header-burger-icon"></use>
-      </svg>
-    </button>
-    <button type="button" class="modal-close js-close-menu" data-modal-close>
-      <svg class="modal-close-icon" width="20" height="20">
-        <use href="/img/icons.svg#close-btn-modal-icon"></use>
-      </svg>
-    </button>
-  </div>
-</header>
+    >Lloyd<span class="header-link-logo-text">Jefferson.</span></a
+  >
+   </div>
+     <div class="right-part">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <div class="switch-btn">
+            <svg class="dark-icon" width="20" height="20">
+              <use href="/img/icons.svg#icon-dark"></use>
+            </svg> 
+          </div>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#about">About me</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" data-modal-open class="burger-menu">
+        <svg class="burger-icon" width="21" height="14">
+          <use href="/img/icons.svg#header-burger-icon"></use>
+        </svg>
+      </button>
+      <button type="button" class="modal-close" data-modal-close>
+        <svg class="modal-close-icon" width="20" height="20">
+          <use href="/img/icons.svg#close-btn-modal-icon"></use>
+        </svg>
+      </button>
+     </div>
+      
+  </header>
+</div>
+
 <div class="backdrop is-hidden" data-modal>
-  <div id="mobile-menu" class="menu-container js-menu-container"  >
+  <div id="mobile-menu" class="menu-container light"  >
     <ul class="mob-menu-list">
       <li class="mob-menu-item">
         <a class="mob-menu-link" href="#about">About me</a>
@@ -45,4 +54,3 @@
     </ul>
   </div>
 </div>
-

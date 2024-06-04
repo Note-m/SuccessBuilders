@@ -6,10 +6,8 @@ export const onSwitchTheme = event => {
   document.body.classList.toggle('body-dark');
 
   const icons = document.querySelectorAll('.use-acardion');
-  const upIconsSkills = document.querySelectorAll('.up-line-icon use');
-  const downIconsSkills = document.querySelectorAll('.down-line-icon use');
-  const arrowRevPrev = document.querySelectorAll('.btn-prev use');
-  const arrowRevNext = document.querySelectorAll('.btn-next use');
+  const upIconsSkills = document.querySelectorAll('.up-line-icon');
+  const downIconsSkills = document.querySelectorAll('.down-line-icon');
 
   icons.forEach(icon => {
     let iconName;
@@ -39,44 +37,6 @@ export const onSwitchTheme = event => {
       iconSkillsNames = 'tech-skills-green-square-icon';
     }
     icon.setAttribute('href', `${iconsUrl}#${iconSkillsNames}`);
-  });
-
-  arrowRevPrev.forEach(icon => {
-    const parentButtonPrev = document.querySelector('.arrow-revi-prev');
-    let arrowRevPrevName;
-    if (document.body.classList.contains('body-dark')) {
-      if (parentButtonPrev.disabled) {
-        arrowRevPrevName = 'reviews-dark-grey-btn-prev';
-      } else {
-        arrowRevPrevName = 'reviews-white-btn-prev';
-      }
-    } else {
-      if (parentButtonPrev.disabled) {
-        arrowRevPrevName = 'reviews-grey-btn-prev';
-      } else {
-        arrowRevPrevName = 'reviews-black-btn-prev';
-      }
-    }
-    icon.setAttribute('href', `${iconsUrl}#${arrowRevPrevName}`);
-  });
-
-  arrowRevNext.forEach(icon => {
-    const parentButtonNext = document.querySelector('.arrow-revi-next');
-    let arrowRevNextName;
-    if (document.body.classList.contains('body-dark')) {
-      if (parentButtonNext.disabled) {
-        arrowRevNextName = 'reviews-dark-grey-btn-next';
-      } else {
-        arrowRevNextName = 'reviews-white-btn-next';
-      }
-    } else {
-      if (parentButtonNext.disabled) {
-        arrowRevNextName = 'reviews-grey-btn-next';
-      } else {
-        arrowRevNextName = 'reviews-black-btn-next';
-      }
-    }
-    icon.setAttribute('href', `${iconsUrl}#${arrowRevNextName}`);
   });
 };
 

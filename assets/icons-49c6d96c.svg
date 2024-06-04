@@ -53,6 +53,12 @@
 <symbol id="faq-arrow-up-icon" viewBox="0 0 24 24" fill="none" >
   <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
 </symbol>
+<symbol id="faq-arrow-white-down-icon" viewBox="0 0 24 24" fill="none" >
+  <path d="M18 9L12 15L6 9" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" />
+</symbol>
+<symbol id="faq-arrow-white-up-icon" viewBox="0 0 24 24" fill="none" >
+  <path d="M18 15L12 9L6 15" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" />
+</symbol>
 
 <!-- Reviews -->
 <symbol id="reviews-black-btn-next" viewBox="0 0 24 24" fill="none" >

@@ -97,6 +97,19 @@
     .footer-text-cpoyright {
         text-align: right;  
     }
+
+    .footer-text-cpoyright {
+        margin-inline: 0;
+        margin-left: auto;
+        width: 351px;
+        font-family: var(--font-family);
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: var(--black);
+    }
   }
 
   @media screen and (min-width: 1280px) {

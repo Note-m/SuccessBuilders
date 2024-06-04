@@ -162,6 +162,17 @@
   gap: 16px;
 }
 
+
+.work-together-link:hover,
+.work-together-link:focus {
+  color: var(--accet-green);
+}
+
+.work-together-btn:hover,
+.work-together-btn:focus {
+  background: #009156;
+}
+
 /* backdrop */
 
 .work-together-backdrop {
@@ -347,13 +358,5 @@
     justify-content: space-between;
   }
 
-  .work-together-link:hover,
-  .work-together-link:focus {
-    color: var(--accet-green);
-  }
 
-  .work-together-btn:hover,
-  .work-together-btn:focus {
-    background: #009156;
-  }
 }

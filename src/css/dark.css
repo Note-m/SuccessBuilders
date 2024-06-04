@@ -1,0 +1,66 @@
+.body-dark p {
+  color: #fff;
+  /* background-color: #1e2023; */
+}
+.body-dark a {
+  color: #fff;
+}
+
+.body-dark .user-review {
+  background: #2a2d32;
+}
+
+.body-dark .my-projects-btn-load-more {
+  color: #fff;
+}
+.body-dark .my-projects-btn-visit {
+  background: #2a2d32;
+}
+.body-dark .my-projects-name {
+  color: #fff;
+}
+.body-dark .hero-button-order {
+  color: #fff;
+}
+
+.body-dark .hero-button-bg {
+  background: #204136;
+}
+.body-dark .about {
+  color: #fff;
+}
+
+.body-dark .hero-title {
+  color: #fff;
+}
+
+.body-dark h2 {
+  color: #fff;
+}
+.body-dark .wrapper-one {
+  color: #fff;
+  background: #204136;
+}
+.body-dark .wrapper-two {
+  color: #14c57c;
+  background: #2a2d32;
+}
+.body-dark .hero-social-list {
+  background: #2a2d32;
+}
+
+.body-dark .btn-next,
+.body-dark .btn-prev {
+  background: #1e2023;
+  border: 1px solid #2a2d32;
+}
+.body-dark .btn-next:disabled,
+.body-dark .btn-prev:disabled {
+  background: #1e2023;
+}
+.body-dark .btn-next:hover,
+.body-dark .btn-prev:hover,
+.body-dark .btn-next:focus,
+.body-dark .btn-prev:focus {
+  background: #3b3f45;
+}

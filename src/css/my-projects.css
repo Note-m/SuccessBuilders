@@ -59,6 +59,7 @@
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
 }
 
 .my-projects-btn-visit:hover,
@@ -84,8 +85,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.my-projects-btn-load-more:hover,
-.my-projects-btn-load-more:focus {
+.my-projects-btn-load-more:hover {
   color: #00b068;
 }
 
@@ -135,10 +135,11 @@
 
   .my-projects-text {
     margin-top: 16px;
+    margin-bottom: 20px;
   }
 
   .my-projects-img {
-    border-radius: 25px;
+    border-radius: 40px;
   }
 
   .my-projects-name {
@@ -158,6 +159,7 @@
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    color: #292929;
   }
 }
 @media screen and (min-width: 1280px) {

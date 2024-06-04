@@ -66,11 +66,22 @@
 
 .btn-prev:hover,
 .btn-next:hover,
+.btn-prev:focus,
+.btn-next:focus,
 .btn-prev:active,
 .btn-next:active {
   background-color: #009156;
 }
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  cursor: not-allowed;
+  background: #e4e5e6;
+}
 
+.swiper-button-prev:disabled:hover,
+.swiper-button-next:disabled:hover {
+  background: #e4e5e6;
+}
 .not-found {
   font-size: 20px;
   margin: 0 auto;
@@ -89,9 +100,9 @@
   .swiper-wrapper {
     max-width: 1240px;
   }
- .swiper-slide {
-   display: flex !important;
- }
+  .swiper-slide {
+    display: flex !important;
+  }
   .reviews-title {
     margin-bottom: 80px;
   }

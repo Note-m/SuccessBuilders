@@ -37,9 +37,9 @@ const markup = review => {
   return review
     .map(
       ({ author, avatar_url, review: reviewText }) => `
-    <li class="swiper-slide user-review">
-      <p class="text-review">${reviewText}</p>
-      <div class="icon-photo-name">
+    <li class='swiper-slide user-review'>
+      <p class='text-review'>${reviewText}</p>
+      <div class='icon-photo-name'>
         <img
           src="${avatar_url}"
           alt="${author}"
@@ -148,11 +148,13 @@ const disableBtn = (button, isDisabled, icon, iconName) => {
   }
 };
 
+
 if (document.body.classList.contains('body-dark')) {
-  disableBtn(prevBtn, true, iconPrev, 'reviews-dark-grey-btn-prev');
+    disableBtn(prevBtn, true, iconPrev, 'reviews-dark-grey-btn-prev');
 } else {
-  disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
+    disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
 }
+
 
 prevBtn.addEventListener('click', () => {
   swiper.slidePrev();

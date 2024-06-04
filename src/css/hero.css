@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 52px;
     
   }
 .hero-button {
@@ -65,7 +66,7 @@
     text-transform: uppercase;
     color: var(--black);
     position: absolute;
-    margin-left: 40px;
+    margin-left: 44px;
     z-index: 2; 
 }
 .hero-button-bg {
@@ -76,12 +77,9 @@
     background: var(--light-accent);
     border-radius: 16px;
     position: relative;
+    opacity: 50%;
     /* z-index: 1; */
     
-}
-
-.hero-moto{
-    margin-bottom: 56px;
 }
 .hero-moto-text {
     font-family: var(--font-family);
@@ -138,7 +136,10 @@
         url(../img/hero/decor-hero-up-tab-1x.png),
         url(../img/hero/decor-hero-down-tab-1x.png);
         background-repeat: no-repeat, no-repeat;
-        background-position:top right, left 184px bottom 52px;
+        background-position:top right, left 184px bottom 68px;
+    }
+    .hero-row{
+        margin-bottom: 80px;
     }
     .hero-title {
         font-size: 136px;
@@ -153,6 +154,7 @@
     .hero-button-order{
         font-size: 20px;
         line-height: 160%;
+         margin-left: 76px;
     
     }
     .hero-button-bg {
@@ -185,6 +187,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 168px;
+    gap: 0;
     }
     .hero-container {
         padding-top: 16px;
@@ -194,6 +197,7 @@
     width: 108px;
     height: 108px;
     display: inline-flex;
+    margin-left: 8px !important;
    }
    .hero-button{
     margin-right: 136px;

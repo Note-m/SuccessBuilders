@@ -66,6 +66,8 @@
 
 .btn-prev:hover,
 .btn-next:hover,
+.btn-prev:focus,
+.btn-next:focus,
 .btn-prev:active,
 .btn-next:active {
   background-color: #009156;
@@ -89,9 +91,9 @@
   .swiper-wrapper {
     max-width: 1240px;
   }
- .swiper-slide {
-   display: flex !important;
- }
+  .swiper-slide {
+    display: flex !important;
+  }
   .reviews-title {
     margin-bottom: 80px;
   }

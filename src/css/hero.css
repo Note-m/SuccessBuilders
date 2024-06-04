@@ -1,224 +1,210 @@
 :root {
-	--black: #292929;
-	--accet-green: #00b068;
-	--white: #f0f0f0;
-	--light-grey: #e4e5e6;
-	--light-accent: #bcdfd1;
-  --font-family: "Poppins", sans-serif;
-  --second-family: "Impact", sans-serif;
-  --third-family: "Montserrat", sans-serif;
+  --black: #292929;
+  --accet-green: #00b068;
+  --white: #f0f0f0;
+  --light-grey: #e4e5e6;
+  --light-accent: #bcdfd1;
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Impact', sans-serif;
+  --third-family: 'Montserrat', sans-serif;
 }
-.section-hero{
-    padding-top: 16px;
+.section-hero {
+  padding-top: 16px;
 }
 .hero-wrapper {
-    min-width: 320px;
-    max-width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 40px;
-    padding-top: 96px;
-    background-image: 
-        url(../img/hero/decor-mob-up-blur-1x-min.png),
-        url(../img/hero/decor-mob-down-blur-1x-min.png);
-        background-repeat: no-repeat, no-repeat;
-        background-position:top right,right bottom 72px;
-    
-    
+  min-width: 320px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 40px;
+  padding-top: 96px;
+  background-image: url(../img/hero/decor-mob-up-blur-1x-min.png),
+    url(../img/hero/decor-mob-down-blur-1x-min.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, right bottom 72px;
 }
-.hero-img-desk{
-    display: none;
+.hero-img-desk {
+  display: none;
 }
 .hero-title {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 125%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--black);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
 }
-.hero-title-accent{
-    color: var(--accet-green);
+.hero-title-accent {
+  color: var(--accet-green);
 }
-.hero-row{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    /* padding-bottom: 72px; */
-
-  }
+.hero-row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* padding-bottom: 72px; */
+}
 .hero-button {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 320px;
-    height: 92px;
-    align-items: center;
-    background: transparent;
-    border: none;
-    padding-left: 0;
-    padding-right: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 92px;
+  align-items: center;
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
 }
-.hero-button:hover .hero-button-bg{
-    background: var(--accet-green);
+.hero-button:hover .hero-button-bg {
+  background: var(--accet-green);
 }
 .hero-button-order {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--black);
-    position: absolute;
-    margin-left: 44px;
-    z-index: 2; 
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  position: absolute;
+  margin-left: 44px;
+  z-index: 2;
 }
 .hero-button-bg {
-    box-sizing: border-box;
-    width: 165px;
-    height: 92px;
-    top: 0px;
-    background: var(--light-accent);
-    border-radius: 16px;
-    position: relative;
-    opacity: 50%;
-    /* z-index: 1; */
-    
+  box-sizing: border-box;
+  width: 165px;
+  height: 92px;
+  top: 0px;
+  background: var(--light-accent);
+  border-radius: 16px;
+  position: relative;
+  opacity: 50%;
+  /* z-index: 1; */
 }
 .hero-moto-text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--black);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
 }
 .hero-moto-accent {
-    color: var(--accet-green);
+  color: var(--accet-green);
 }
-.hero-button-arrow { 
-    fill: var(--accet-green);
+.hero-button-arrow {
+  fill: var(--accet-green);
 }
-.hero-social{
-    position: relative; 
-    left: 50%; 
-    right: 50%;
-    width: 100vw; 
-    margin-left: -50vw; 
-    margin-right: -50vw; 
-    background: var(--light-grey); 
-    box-sizing: border-box;   
+.hero-social {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: var(--light-grey);
+  box-sizing: border-box;
 }
 .hero-social-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 0px;
-    gap: 24px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0px;
+  gap: 24px;
 }
 .hero-social-target-link {
-    font-family: var(--font-family);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    color: var(--black);
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
 }
-.hero-social-target-link:hover, 
-.hero-social-target-link:focus{
-    color: var(--accet-green);
+.hero-social-target-link:hover,
+.hero-social-target-link:focus {
+  color: var(--accet-green);
 }
 
 @media screen and (min-width: 768px) {
-    .hero-wrapper {
-        max-width: 768px;
-        padding-top: 72px;
-        background-image: 
-        url(../img/hero/decor-hero-up-tab-1x.png),
-        url(../img/hero/decor-hero-down-tab-1x.png);
-        background-repeat: no-repeat, no-repeat;
-        background-position:top right, left 184px bottom 68px;
-    }
-    .hero-row{
-        margin-bottom: 80px;
-    }
-    .hero-title {
-        font-size: 136px;
-        line-height: 115%;
-        letter-spacing: 0.01em;
-        color: var(--black);
-    }
-    .hero-button {
-        width: 416px;
-        height: 96px;
-    }
-    .hero-button-order{
-        font-size: 20px;
-        line-height: 160%;
-         margin-left: 76px;
-    
-    }
-    .hero-button-bg {
-        border-radius: 16px;
-        width: 261px;
-        height: 96px;
-        border: none;
-    }
-    .hero-social-list{
-        flex-direction: row;
-        gap: 40px;
-    }
+  .hero-wrapper {
+    max-width: 768px;
+    padding-top: 72px;
+    background-image: url(../img/hero/decor-hero-up-tab-1x.png),
+      url(../img/hero/decor-hero-down-tab-1x.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, left 184px bottom 68px;
+  }
+  .hero-row {
+    margin-bottom: 80px;
+  }
+  .hero-title {
+    font-size: 136px;
+    line-height: 115%;
+    letter-spacing: 0.01em;
+    color: var(--black);
+  }
+  .hero-button {
+    width: 416px;
+    height: 96px;
+  }
+  .hero-button-order {
+    font-size: 20px;
+    line-height: 160%;
+    margin-left: 76px;
+  }
+  .hero-button-bg {
+    border-radius: 16px;
+    width: 261px;
+    height: 96px;
+    border: none;
+  }
+  .hero-social-list {
+    flex-direction: row;
+    gap: 40px;
+  }
 
-
-    .hero-moto-text {
-       font-size: 20px;
-        line-height: 160%;
-    }
-  
+  .hero-moto-text {
+    font-size: 20px;
+    line-height: 160%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .hero-wrapper {
+  .hero-wrapper {
     max-width: 1280px;
-    background-image: 
-    url(../img/hero/decor-hero-up-desk-1x.png), 
-    url(../img/hero/decor-hero-down-desk-1x.png);
+    background-image: url(../img/hero/decor-hero-up-desk-1x.png),
+      url(../img/hero/decor-hero-down-desk-1x.png);
     background-repeat: no-repeat, no-repeat;
     background-position: right 32px top 18px, left 204px bottom 16px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 168px;
     gap: 0;
-    }
-    .hero-container {
-        padding-top: 16px;
-    }
-   .hero-img-desk{
-    border-radius: 16px;
+  }
+  .hero-container {
+    padding-top: 16px;
+  }
+  .hero-img-desk {
+    border-radius: 18px;
     width: 108px;
     height: 108px;
     display: inline-flex;
     margin-left: 8px !important;
-   }
-   .hero-button{
+  }
+  .hero-button {
     margin-right: 136px;
-   }
-  .hero-row{
+  }
+  .hero-row {
     display: flex;
     flex-flow: row;
     padding-top: 80px;
     padding-bottom: 16px;
     padding-left: 72px;
-    
   }
-   .hero-moto-text{
+  .hero-moto-text {
     width: 592px;
-   }
-   
+  }
 }
-

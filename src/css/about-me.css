@@ -227,6 +227,9 @@
 section-about-me {
   width: 100%;
 }
+.about-me-picture {
+  border-radius: 20px;
+}
 .about-me-title {
   font-family: 'Impact', sans-serif;
   font-weight: 400;

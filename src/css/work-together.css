@@ -48,8 +48,6 @@
   gap: 16px;
 }
 
-.work-together-form {
-}
 
 .work-together-link {
   font-family: var(--font-family);
@@ -110,7 +108,7 @@
 }
 
 .work-together-error-message {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 12px;
@@ -279,6 +277,7 @@
   }
 
   .work-together-text {
+    width: 504px;
     margin-bottom: 32px;
     font-size: 20px;
     line-height: 160%;
@@ -328,9 +327,7 @@
   .work-together-form {
     width: 592px;
   }
-  .work-together-text {
-    /* margin-bottom: left; */
-  }
+
 
   .work-together-adress {
     margin-bottom: 0;

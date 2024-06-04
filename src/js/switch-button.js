@@ -41,43 +41,43 @@ export const onSwitchTheme = event => {
     icon.setAttribute('href', `${iconsUrl}#${iconSkillsName}`);
   });
 
-  //   arrowRevPrev.forEach(icon => {
-  //     const parentButtonPrev = document.querySelector('.arrow-revi-prev');
-  //     let arrowRevPrevName;
-  //     if (document.body.classList.contains('body-dark')) {
-  //       if (parentButtonPrev.disabled) {
-  //         arrowRevPrevName = 'reviews-dark-grey-btn-prev';
-  //       } else {
-  //         arrowRevPrevName = 'reviews-white-btn-prev';
-  //       }
-  //     } else {
-  //       if (parentButtonPrev.disabled) {
-  //         arrowRevPrevName = 'reviews-grey-btn-prev';
-  //       } else {
-  //         arrowRevPrevName = 'reviews-black-btn-prev';
-  //       }
-  //     }
-  //     icon.setAttribute('href', `${iconsUrl}#${arrowRevPrevName}`);
-  //   });
+  arrowRevPrev.forEach(icon => {
+    const parentButtonPrev = document.querySelector('.arrow-revi-prev');
+    let arrowRevPrevName;
+    if (document.body.classList.contains('body-dark')) {
+      if (parentButtonPrev.disabled) {
+        arrowRevPrevName = 'reviews-dark-grey-btn-prev';
+      } else {
+        arrowRevPrevName = 'reviews-white-btn-prev';
+      }
+    } else {
+      if (parentButtonPrev.disabled) {
+        arrowRevPrevName = 'reviews-grey-btn-prev';
+      } else {
+        arrowRevPrevName = 'reviews-black-btn-prev';
+      }
+    }
+    icon.setAttribute('href', `${iconsUrl}#${arrowRevPrevName}`);
+  });
 
-  //   arrowRevNext.forEach(icon => {
-  //     const parentButtonNext = document.querySelector('.arrow-revi-next');
-  //     let arrowRevNextName;
-  //     if (document.body.classList.contains('body-dark')) {
-  //       if (parentButtonNext.disabled) {
-  //         arrowRevNextName = 'reviews-dark-grey-btn-next';
-  //       } else {
-  //         arrowRevNextName = 'reviews-white-btn-next';
-  //       }
-  //     } else {
-  //       if (parentButtonNext.disabled) {
-  //         arrowRevNextName = 'reviews-grey-btn-next';
-  //       } else {
-  //         arrowRevNextName = 'reviews-black-btn-next';
-  //       }
-  //     }
-  //     icon.setAttribute('href', `${iconsUrl}#${arrowRevNextName}`);
-  //   });
+  arrowRevNext.forEach(icon => {
+    const parentButtonNext = document.querySelector('.arrow-revi-next');
+    let arrowRevNextName;
+    if (document.body.classList.contains('body-dark')) {
+      if (parentButtonNext.disabled) {
+        arrowRevNextName = 'reviews-dark-grey-btn-next';
+      } else {
+        arrowRevNextName = 'reviews-white-btn-next';
+      }
+    } else {
+      if (parentButtonNext.disabled) {
+        arrowRevNextName = 'reviews-grey-btn-next';
+      } else {
+        arrowRevNextName = 'reviews-black-btn-next';
+      }
+    }
+    icon.setAttribute('href', `${iconsUrl}#${arrowRevNextName}`);
+  });
 };
 
 switchThemeBtnEl.addEventListener('click', onSwitchTheme);

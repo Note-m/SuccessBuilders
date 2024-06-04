@@ -19,7 +19,13 @@
     align-items: stretch;
     gap: 40px;
     padding-top: 96px;
-    background-image: url(../img/background/decor-bg-1.png) no-repeat top;
+    background-image: 
+        url(../img/hero/decor-mob-up-blur-1x-min.png),
+        url(../img/hero/decor-mob-down-blur-1x-min.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position:top right,right bottom 72px;
+    
+    
 }
 .hero-img-desk{
     display: none;
@@ -40,7 +46,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    
+    padding-bottom: 72px;
   }
 .hero-button {
     display: inline-flex;

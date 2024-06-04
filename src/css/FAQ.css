@@ -25,13 +25,17 @@
   width: 100%;
 }
 
+.accordion-list-title {
+  width: 224px;
+}
+
 .accordion-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   border-radius: 16px;
-  padding: 28px 24px 24px 24px;
+  padding: 28px 24px 28px 24px;
 }
 
 .accordion-title span {
@@ -39,8 +43,8 @@
   justify-content: center;
   align-items: center;
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   align-self: flex-start;
 }
 
@@ -54,12 +58,16 @@
   padding-bottom: 28px;
 }
 
+.accordion-block.active .accordion-title {
+  padding: 28px 24px 24px 24px;
+}
+
 .accordion-list-title {
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
-  line-height: 32px;
-  letter-spacing: 0.5px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
   font-weight: 400;
 }
 
@@ -109,9 +117,13 @@
     font-size: 108px;
     line-height: 1.14815;
     letter-spacing: 0.02em;
+    margin-bottom: 60px;
   }
+
   .accordion-list-title {
-    padding-right: 32px;
+    width: 600px;
+    font-size: 20px;
+    line-height: 1.6;
   }
 }
 
@@ -132,5 +144,9 @@
     display: block;
     width: 526px;
     height: 408px;
+  }
+
+  .accordion-list {
+    width: 592px;
   }
 }

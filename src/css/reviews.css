@@ -1,19 +1,6 @@
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+.reviews-list {
+  margin-bottom: 24px;
 }
-
-.disabled {
-  background-color: grey;
-  cursor: not-allowed;
-  stroke: darkgray;
-}
-
-
- .reviews-list {
-   margin-bottom: 24px;
- }
 
 .reviews-title {
   font-family: 'Impact', sans-serif;
@@ -31,7 +18,6 @@
   padding: 32px;
   background-color: #e4e5e6;
   border-radius: 16px;
-    
 }
 
 .text-review {
@@ -75,19 +61,30 @@
   border-radius: 8px;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color:#f0f0f0;
 }
 
 .btn-prev:hover,
 .btn-next:hover,
+.btn-prev:focus,
+.btn-next:focus,
 .btn-prev:active,
 .btn-next:active {
-  background-color: #009156;
+  background-color:#BCDFD1;
+}
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  cursor: not-allowed;
+  background: #e4e5e6;
 }
 
+.swiper-button-prev:disabled:hover,
+.swiper-button-next:disabled:hover {
+  background: #e4e5e6;
+}
 .not-found {
-font-size: 20px;
-margin: 0 auto;
+  font-size: 20px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -97,22 +94,24 @@ margin: 0 auto;
     letter-spacing: 0.02em;
     margin-bottom: 60px;
   }
-
 }
 
 @media screen and (min-width: 1280px) {
   .swiper-wrapper {
     max-width: 1240px;
   }
-
-  .is-hidden {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  .swiper-slide {
+    display: flex !important;
   }
-
   .reviews-title {
     margin-bottom: 80px;
+  }
+  .user-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 248px;
+    max-height: 248px;
   }
 
   .btn-prev,

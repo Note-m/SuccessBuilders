@@ -3,13 +3,15 @@ import 'swiper/css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import iconsUrl from '../img/icons.svg';
+
 const BASE_URL = 'https://portfolio-js.b.goit.study/api';
 
-const galleryReviews = document.querySelector(".swiper-wrapper");
-const prevBtn = document.querySelector(".swiper-button-prev");
-const nextBtn = document.querySelector(".swiper-button-next");
-const iconPrev = prevBtn.querySelector(".icon-swipe");
-const iconNext = nextBtn.querySelector(".icon-swipe");
+const galleryReviews = document.querySelector('.swiper-wrapper');
+const prevBtn = document.querySelector('.swiper-button-prev');
+const nextBtn = document.querySelector('.swiper-button-next');
+const iconPrev = prevBtn.querySelector('.icon-swipe-prev use');
+const iconNext = nextBtn.querySelector('.icon-swipe-next use');
 
 let reviews;
 
@@ -32,11 +34,12 @@ const fetchReviews = async () => {
 };
 
 const markup = review => {
-  return review.map(  
-  ({ author, avatar_url, review: reviewText }) =>  `
-    <li class="swiper-slide user-review">
-      <p class="text-review">${reviewText}</p>
-      <div class="icon-photo-name">
+  return review
+    .map(
+      ({ author, avatar_url, review: reviewText }) => `
+    <li class='swiper-slide user-review'>
+      <p class='text-review'>${reviewText}</p>
+      <div class='icon-photo-name'>
         <img
           src="${avatar_url}"
           alt="${author}"
@@ -47,7 +50,8 @@ const markup = review => {
         <p class="user-name-review">${author}</p>
       </div>
     </li>`
-  ).join("");
+    )
+    .join('');
 };
 
 const initReviews = async () => {
@@ -60,29 +64,29 @@ const initReviews = async () => {
   } catch (error) {
     console.log(error);
     galleryReviews.innerHTML = "<p class='not-found'>Not found</p>";
-    disabledBtn(prevBtn, true);
-    disabledBtn(nextBtn, true);
+    disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
+    disableBtn(nextBtn, true, iconNext, 'reviews-grey-btn-next');
   }
 };
 
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper('.swiper-container', {
   breakpoints: {
     1280: {
       slidesPerView: 2,
-      spaceBetween: 32
+      spaceBetween: 32,
     },
     768: {
       slidesPerView: 1,
-      spaceBetween: 10
+      spaceBetween: 24,
     },
     360: {
       slidesPerView: 1,
-      spaceBetween: 10
-    }
+      spaceBetween: 16,
+    },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   autoHeight: true,
   keyboard: {
@@ -97,52 +101,60 @@ const swiper = new Swiper(".swiper-container", {
       const slidesPerView = swiper.params.slidesPerView;
       const totalSlides = reviews.length;
 
-      console.log(`currentIndex: ${currentIndex}`);
-      console.log(`slidesPerView: ${slidesPerView}`);
-      console.log(`totalSlides: ${totalSlides}`);
-
-      if (currentIndex === 0) {
-        disabledBtn(prevBtn, true);
+    if (currentIndex === 0) {
+        if (document.body.classList.contains('body-dark')) {
+          disableBtn(prevBtn, true, iconPrev, 'reviews-dark-grey-btn-prev');
+        } else {
+           disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
+        }
       } else {
-        disabledBtn(prevBtn, false);
+        if (document.body.classList.contains('body-dark')) {
+        disableBtn(prevBtn, false, iconPrev, 'reviews-white-btn-prev')
+        } else {
+          disableBtn(prevBtn, false, iconPrev, 'reviews-black-btn-prev');
+      }  
       }
 
       if (currentIndex >= totalSlides - slidesPerView) {
-        disabledBtn(nextBtn, true);
+        if (document.body.classList.contains('body-dark')) {
+          disableBtn(nextBtn, true, iconNext, 'reviews-dark-grey-btn-next');
+        } else {
+          disableBtn(nextBtn, true, iconNext, 'reviews-grey-btn-next');
+        }
         iziToast.info({
           title: 'Info',
           message: 'Sorry, no more reviews for now.',
           position: 'topRight',
-          color: 'green'
+          color: 'green',
         });
       } else {
-        disabledBtn(nextBtn, false);
+        if (document.body.classList.contains('body-dark')) {
+          disableBtn(nextBtn, false, iconNext, 'reviews-white-btn-next');
+        } else {
+          disableBtn(nextBtn, false, iconNext, 'reviews-black-btn-next');
+        }
       }
     },
   },
 });
 
-const disabledBtn = (button, isDisabled) => {
+const disableBtn = (button, isDisabled, icon, iconName) => {
   button.disabled = isDisabled;
+  icon.setAttribute('href', `${iconsUrl}#${iconName}`);
   if (isDisabled) {
-    button.style.backgroundColor = "grey";
-    button.style.cursor = "not-allowed";
-    if (button === prevBtn) {
-      iconPrev.style.stroke = "grey";
-    } else {
-      iconNext.style.stroke = "grey";
-    }
+    button.style.cursor = 'not-allowed';
   } else {
-    button.style.backgroundColor = '';
     button.style.cursor = '';
-    if (button === prevBtn) {
-      iconPrev.style.stroke = "#292929";
-    } else {
-      iconNext.style.stroke = "#292929";
-    }
   }
 };
-disabledBtn(prevBtn, true);
+
+
+if (document.body.classList.contains('body-dark')) {
+    disableBtn(prevBtn, true, iconPrev, 'reviews-dark-grey-btn-prev');
+} else {
+    disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
+}
+
 
 prevBtn.addEventListener('click', () => {
   swiper.slidePrev();

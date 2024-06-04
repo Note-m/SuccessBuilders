@@ -48,8 +48,6 @@
   gap: 16px;
 }
 
-.work-together-form {
-}
 
 .work-together-link {
   font-family: var(--font-family);
@@ -99,6 +97,7 @@
 }
 
 .work-together-input-message {
+  resize: none;
   margin-bottom: 4px;
   display: block;
   width: 100%;
@@ -109,7 +108,7 @@
 }
 
 .work-together-error-message {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 12px;
@@ -161,6 +160,17 @@
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+
+.work-together-link:hover,
+.work-together-link:focus {
+  color: var(--accet-green);
+}
+
+.work-together-btn:hover,
+.work-together-btn:focus {
+  background: #009156;
 }
 
 /* backdrop */
@@ -237,8 +247,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .work-together-section {
+    padding-top: 0;
+  }
+
   .work-together-container {
-    background-image: url(../img/lets-work/decor/lets-work-tab-1x.png);
+    padding-top: 62px;
+    background-image: url(../img/lets-work/decor-lets-work-tab-1x.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: auto;
@@ -258,12 +273,12 @@
   }
 
   /* .work-together-picture {
-        position: absolute;
-        top: -25%;
-        right:0;
-        display: block;
-       
-    } */
+      position: absolute;
+      top: -25%;
+      right:0;
+      display: block;
+     
+  } */
 
   .work-together-title {
     margin-bottom: 60px;
@@ -273,6 +288,7 @@
   }
 
   .work-together-text {
+    width: 504px;
     margin-bottom: 32px;
     font-size: 20px;
     line-height: 160%;
@@ -299,10 +315,11 @@
 
 @media screen and (min-width: 1280px) {
   .work-together-container {
+    padding-top: 82px;
     background-image: url(../img/lets-work/decor-lets-work-desk-1x.png);
     background-repeat: no-repeat;
-    background-position: top -200px right;
-    /* background-size:auto; */
+    background-position: top right;
+    background-size: auto;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -321,9 +338,7 @@
   .work-together-form {
     width: 592px;
   }
-  .work-together-text {
-    /* margin-bottom: left; */
-  }
+
 
   .work-together-adress {
     margin-bottom: 0;
@@ -343,13 +358,5 @@
     justify-content: space-between;
   }
 
-  .work-together-link:hover,
-  .work-together-link:focus {
-    color: var(--accet-green);
-  }
 
-  .work-together-btn:hover,
-  .work-together-btn:focus {
-    background: #009156;
-  }
 }

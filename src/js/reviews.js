@@ -77,11 +77,11 @@ const swiper = new Swiper('.swiper-container', {
     },
     768: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 24,
     },
     360: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 16,
     },
   },
   navigation: {

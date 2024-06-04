@@ -8,15 +8,18 @@
   --second-family: "Impact", sans-serif;
   --third-family: "Montserrat", sans-serif;
 }
-.hero-container {
+.section-hero{
+    padding-top: 16px;
+}
+.hero-wrapper {
     min-width: 320px;
     max-width: 360px;
-    background: url(../img/background/decor-bg-1.png) no-repeat top;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     gap: 40px;
     padding-top: 96px;
+    background-image: url(../img/background/decor-bg-1.png) no-repeat top;
 }
 .hero-img-desk{
     display: none;
@@ -33,6 +36,12 @@
 .hero-title-accent{
     color: var(--accet-green);
 }
+.hero-row{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+  }
 .hero-button {
     display: inline-flex;
     justify-content: space-between;
@@ -41,6 +50,8 @@
     align-items: center;
     background: transparent;
     border: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 .hero-button:hover .hero-button-bg{
     background: var(--accet-green);
@@ -55,7 +66,7 @@
     color: var(--black);
     position: absolute;
     margin-left: 40px;
-    z-index: 1; 
+    z-index: 2; 
 }
 .hero-button-bg {
     box-sizing: border-box;
@@ -63,10 +74,9 @@
     height: 92px;
     top: 0px;
     background: var(--light-accent);
-    border: 1px solid #000000;
     border-radius: 16px;
     position: relative;
-    z-index: -1;
+    /* z-index: 1; */
     
 }
 
@@ -115,20 +125,21 @@
     letter-spacing: 0.03em;
     color: var(--black);
 }
-.hero-social-target-link:hover{
+.hero-social-target-link:hover, 
+.hero-social-target-link:focus{
     color: var(--accet-green);
 }
 
 @media screen and (min-width: 768px) {
-    .hero-container {
-    max-width: 768px;
-    background-image: 
-    url(../img/hero/decor-hero-up-tab-1x.png), 
-    url(../img/hero/decor-hero-down-tab-1x.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position:right 32px top 16px, left 184px bottom 102px;
-    padding-bottom: 64px;
-}
+    .hero-wrapper {
+        max-width: 768px;
+        padding-top: 72px;
+        background-image: 
+        url(../img/hero/decor-hero-up-tab-1x.png),
+        url(../img/hero/decor-hero-down-tab-1x.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position:top right, left 184px bottom 52px;
+    }
     .hero-title {
         font-size: 136px;
         line-height: 115%;
@@ -160,20 +171,23 @@
        font-size: 20px;
         line-height: 160%;
     }
-    .hero-img-desk{
-        display: none;
-    }
+  
 }
 
 @media screen and (min-width: 1280px) {
-    .hero-container {
+    .hero-wrapper {
     max-width: 1280px;
-    background: url(../img/hero/decor-hero-up-desk-1x.png), 
+    background-image: 
+    url(../img/hero/decor-hero-up-desk-1x.png), 
     url(../img/hero/decor-hero-down-desk-1x.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: right 32px top 18px, left 198px bottom 28px;
+    background-position: right 32px top 18px, left 204px bottom 16px;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 168px;
+    }
+    .hero-container {
+        padding-top: 16px;
     }
    .hero-img-desk{
     border-radius: 16px;
@@ -181,19 +195,15 @@
     height: 108px;
     display: inline-flex;
    }
-   .hero-title{
-    padding-top: 72px;
-   }
-   
    .hero-button{
-    margin-left: 72px;
     margin-right: 136px;
-    
-
    }
   .hero-row{
     display: flex;
+    flex-flow: row;
     padding-top: 80px;
+    padding-bottom: 16px;
+    padding-left: 72px;
     
   }
    .hero-moto-text{

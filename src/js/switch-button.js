@@ -32,13 +32,13 @@ export const onSwitchTheme = event => {
   });
 
   upIconsSkills.forEach(icon => {
-    let iconSkillsName;
+    let iconSkillsNames;
     if (document.body.classList.contains('body-dark')) {
-      iconSkillsName = 'tech-skills-dark-green-square-icon';
+      iconSkillsNames = 'tech-skills-dark-green-square-icon';
     } else {
-      iconSkillsName = 'tech-skills-green-square-icon';
+      iconSkillsNames = 'tech-skills-green-square-icon';
     }
-    icon.setAttribute('href', `${iconsUrl}#${iconSkillsName}`);
+    icon.setAttribute('href', `${iconsUrl}#${iconSkillsNames}`);
   });
 
   arrowRevPrev.forEach(icon => {

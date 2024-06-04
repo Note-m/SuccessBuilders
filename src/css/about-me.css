@@ -293,7 +293,7 @@ section-about-me {
 
 @media (min-width: 768px) {
   .bio {
-    background-image: url(./img/about-me/decor-aboutme-desk-1x.png);
+    background-image: url(../img/about-me/decor-aboutme-desk-1x.png);
     background-size: 336px 252px;
     background-position: bottom right; /* Позиціонуємо малюнок внизу по центру */
     background-repeat: no-repeat;

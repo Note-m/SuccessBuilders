@@ -101,14 +101,26 @@ const swiper = new Swiper('.swiper-container', {
       const slidesPerView = swiper.params.slidesPerView;
       const totalSlides = reviews.length;
 
-      if (currentIndex === 0) {
-        disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
+    if (currentIndex === 0) {
+        if (document.body.classList.contains('body-dark')) {
+          disableBtn(prevBtn, true, iconPrev, 'reviews-dark-grey-btn-prev');
+        } else {
+           disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
+        }
       } else {
-        disableBtn(prevBtn, false, iconPrev, 'reviews-black-btn-prev');
+        if (document.body.classList.contains('body-dark')) {
+        disableBtn(prevBtn, false, iconPrev, 'reviews-white-btn-prev')
+        } else {
+          disableBtn(prevBtn, false, iconPrev, 'reviews-black-btn-prev');
+      }  
       }
 
       if (currentIndex >= totalSlides - slidesPerView) {
-        disableBtn(nextBtn, true, iconNext, 'reviews-grey-btn-next');
+        if (document.body.classList.contains('body-dark')) {
+          disableBtn(nextBtn, true, iconNext, 'reviews-dark-grey-btn-next');
+        } else {
+          disableBtn(nextBtn, true, iconNext, 'reviews-grey-btn-next');
+        }
         iziToast.info({
           title: 'Info',
           message: 'Sorry, no more reviews for now.',
@@ -116,7 +128,11 @@ const swiper = new Swiper('.swiper-container', {
           color: 'green',
         });
       } else {
-        disableBtn(nextBtn, false, iconNext, 'reviews-black-btn-next');
+        if (document.body.classList.contains('body-dark')) {
+          disableBtn(nextBtn, false, iconNext, 'reviews-white-btn-next');
+        } else {
+          disableBtn(nextBtn, false, iconNext, 'reviews-black-btn-next');
+        }
       }
     },
   },
@@ -132,7 +148,11 @@ const disableBtn = (button, isDisabled, icon, iconName) => {
   }
 };
 
-disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
+if (document.body.classList.contains('body-dark')) {
+  disableBtn(prevBtn, true, iconPrev, 'reviews-dark-grey-btn-prev');
+} else {
+  disableBtn(prevBtn, true, iconPrev, 'reviews-grey-btn-prev');
+}
 
 prevBtn.addEventListener('click', () => {
   swiper.slidePrev();

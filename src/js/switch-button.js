@@ -1,11 +1,18 @@
 const switchThemeBtnEl = document.querySelector('.switch-btn');
 import iconsUrl from '../img/icons.svg';
 
+
+
 export const onSwitchTheme = event => {
+
   switchThemeBtnEl.classList.toggle('dark-on');
   document.body.classList.toggle('body-dark');
 
   const icons = document.querySelectorAll('.use-acardion');
+  const arrowRevPrev = document.querySelectorAll('.btn-prev use');
+  const arrowRevNext = document.querySelectorAll('.btn-next use');
+  const iconPrev = prevBtn.querySelector('.icon-swipe-prev use');
+  const iconNext = nextBtn.querySelector('.icon-swipe-next use');
   const upIconsSkills = document.querySelectorAll('.up-line-icon');
   const downIconsSkills = document.querySelectorAll('.down-line-icon');
 

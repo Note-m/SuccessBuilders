@@ -119,7 +119,6 @@ export const loadMoreProjects = event => {
       .join('');
     projectsListEl.insertAdjacentHTML('beforeend', createMarkup);
     index += count;
-    loadMoreBtnEl.style.color = '#292929';
   }
   if (index >= projects.length) {
     loadMoreBtnEl.classList.add('is-hidden');

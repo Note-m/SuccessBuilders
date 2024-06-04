@@ -19,9 +19,12 @@ export function manageModal() {
   const workTogetherInputMessage = document.querySelector(
     '.work-together-input-message'
   );
-  // const workTogetherModalTitle = document.querySelector(".work-together-modal-main");
-  // const workTogetherModalText = document.querySelector(".work-together-modal-second");
+
+  const workTogetherModalTitle = document.querySelector(".work-together-modal-main");
+  const workTogetherModalText = document.querySelector(".work-together-modal-second");
   const postToAdd = {};
+  const api = 'https://portfolio-js.b.goit.study/api/'
+
   workTogetherForm.addEventListener('submit', event => {
     event.preventDefault();
 
@@ -35,12 +38,12 @@ export function manageModal() {
           workTogetherInputEmail.value.trim()
         ) === true
       ) {
-        // "^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        
         workTogetherEmailCkeckIcon.classList.remove('hidden');
         workTogetherInputEmail.style.color = 'black';
         postToAdd.email = workTogetherInputEmail.value;
         postToAdd.comment = workTogetherInputMessage.value;
-        console.log(postToAdd);
+       
 
         const options = {
           method: 'POST',
@@ -50,7 +53,9 @@ export function manageModal() {
           },
         };
 
-        fetch('https://portfolio-js.b.goit.study/api/requests', options)
+
+
+        fetch(`${api}requests`, options)
           .then(response => {
             if (!response.ok) {
               throw new Error(response.status);
@@ -59,8 +64,8 @@ export function manageModal() {
           })
           .then(post => {
             // console.log(post)
-            // workTogetherModalTitle.textContent = post.title
-            // workTogetherModalText.textContent = post.message
+            workTogetherModalTitle.textContent = post.title
+            workTogetherModalText.textContent = post.message
             workTogetherModal.classList.add('active');
             workTogetherEmailCkeckIcon.classList.remove('hidden');
           })
@@ -68,10 +73,9 @@ export function manageModal() {
             iziToast.info({
               title: 'Info',
               message:
-                'Sorry, something went wromg, please check your request once more.',
-              position: 'topRight',
+                'Sorry, something went wromg, please check your request once more, fill all the fields'
             });
-            // console.log(error)
+            console.log(error)
           });
 
         // workTogetherModal.classList.add("active")
@@ -82,7 +86,7 @@ export function manageModal() {
         workTogetherErrorMessage.classList.add('active');
       }
     } else {
-      workTogetherErrorMessage.innerHTML = 'Email cannnot be blank';
+      workTogetherErrorMessage.innerHTML = 'Field Email cannot be blank';
       workTogetherErrorMessage.classList.add('active');
     }
   });

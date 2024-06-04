@@ -108,7 +108,7 @@ export const loadMoreProjects = event => {
           <h3 class="my-projects-name">${project.title.toLocaleUpperCase()}</h3>
           <a
             class="my-projects-btn-visit"
-            href="https://note-m.github.io/project/"
+            href="https://note-m.github.io/SuccessBuilders/"
             target="_blank"
             >VISIT<svg class="my-projects-icon" width="18" height="18">
               <use href="${iconArrow}#my-projects-arrow"></use>

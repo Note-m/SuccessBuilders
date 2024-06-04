@@ -49,7 +49,7 @@ import{i as b,S as B}from"./assets/vendor-43af55b9.js";(function(){const s=docum
           <h3 class="my-projects-name">${e.title.toLocaleUpperCase()}</h3>
           <a
             class="my-projects-btn-visit"
-            href="https://note-m.github.io/project/"
+            href="https://note-m.github.io/SuccessBuilders/"
             target="_blank"
             >VISIT<svg class="my-projects-icon" width="18" height="18">
               <use href="${v}#my-projects-arrow"></use>

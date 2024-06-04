@@ -3,6 +3,8 @@ import 'swiper/css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import iconsUrl from '../img/icons.svg';
+
 const BASE_URL = 'https://portfolio-js.b.goit.study/api';
 
 const galleryReviews = document.querySelector('.swiper-wrapper');
@@ -122,7 +124,7 @@ const swiper = new Swiper('.swiper-container', {
 
 const disableBtn = (button, isDisabled, icon, iconName) => {
   button.disabled = isDisabled;
-  icon.setAttribute('href', `../img/icons.svg#${iconName}`);
+  icon.setAttribute('href', `${iconsUrl}#${iconName}`);
   if (isDisabled) {
     button.style.cursor = 'not-allowed';
   } else {

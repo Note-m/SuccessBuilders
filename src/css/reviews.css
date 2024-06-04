@@ -61,7 +61,7 @@
   border-radius: 8px;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color:#f0f0f0;
 }
 
 .btn-prev:hover,
@@ -72,16 +72,7 @@
 .btn-next:active {
   background-color: #009156;
 }
-.swiper-button-prev:disabled,
-.swiper-button-next:disabled {
-  cursor: not-allowed;
-  background: #e4e5e6;
-}
 
-.swiper-button-prev:disabled:hover,
-.swiper-button-next:disabled:hover {
-  background: #e4e5e6;
-}
 .not-found {
   font-size: 20px;
   margin: 0 auto;

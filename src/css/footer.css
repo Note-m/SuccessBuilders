@@ -17,6 +17,18 @@
 .section-footer {
     padding-top: 80px;
     padding-bottom: 24px;
+    position: relative;
+}
+
+.section-footer::after {
+    content:"";
+    width:100%;
+    height:1px;
+    border-top: 1px solid var(--light-grey);
+    position: absolute;
+    top: 40px;
+    
+
 }
 
 .footer-logo {
@@ -38,7 +50,7 @@
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 
 }
 
@@ -56,6 +68,8 @@
 
 
 .footer-text-cpoyright {
+    margin-inline: auto;
+    width: 197px;
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 16px;

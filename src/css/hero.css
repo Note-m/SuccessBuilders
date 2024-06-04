@@ -43,7 +43,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  /* padding-bottom: 72px; */
 }
 .hero-button {
   display: inline-flex;
@@ -80,7 +79,6 @@
   border-radius: 16px;
   position: relative;
   opacity: 50%;
-  /* z-index: 1; */
 }
 .hero-moto-text {
   font-family: var(--font-family);

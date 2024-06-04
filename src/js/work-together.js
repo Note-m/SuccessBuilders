@@ -20,10 +20,14 @@ export function manageModal() {
     '.work-together-input-message'
   );
 
-  const workTogetherModalTitle = document.querySelector(".work-together-modal-main");
-  const workTogetherModalText = document.querySelector(".work-together-modal-second");
+  const workTogetherModalTitle = document.querySelector(
+    '.work-together-modal-main'
+  );
+  const workTogetherModalText = document.querySelector(
+    '.work-together-modal-second'
+  );
   const postToAdd = {};
-  const api = 'https://portfolio-js.b.goit.study/api/'
+  const api = 'https://portfolio-js.b.goit.study/api/';
 
   workTogetherForm.addEventListener('submit', event => {
     event.preventDefault();
@@ -38,12 +42,10 @@ export function manageModal() {
           workTogetherInputEmail.value.trim()
         ) === true
       ) {
-        
         workTogetherEmailCkeckIcon.classList.remove('hidden');
         workTogetherInputEmail.style.color = 'black';
         postToAdd.email = workTogetherInputEmail.value;
         postToAdd.comment = workTogetherInputMessage.value;
-       
 
         const options = {
           method: 'POST',
@@ -52,8 +54,6 @@ export function manageModal() {
             'Content-Type': 'application/json; charset=UTF-8',
           },
         };
-
-
 
         fetch(`${api}requests`, options)
           .then(response => {
@@ -64,8 +64,8 @@ export function manageModal() {
           })
           .then(post => {
             // console.log(post)
-            workTogetherModalTitle.textContent = post.title
-            workTogetherModalText.textContent = post.message
+            workTogetherModalTitle.textContent = post.title;
+            workTogetherModalText.textContent = post.message;
             workTogetherModal.classList.add('active');
             workTogetherEmailCkeckIcon.classList.remove('hidden');
           })
@@ -73,12 +73,10 @@ export function manageModal() {
             iziToast.info({
               title: 'Info',
               message:
-                'Sorry, something went wromg, please check your request once more, fill all the fields'
+                'Sorry, something went wromg, please check your request once more, fill all the fields',
             });
-            console.log(error)
+            console.log(error);
           });
-
-        // workTogetherModal.classList.add("active")
       } else {
         workTogetherErrorMessage.innerHTML =
           'Please input correct Email adress';

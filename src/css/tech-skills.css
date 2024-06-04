@@ -141,4 +141,5 @@
 .wrapper-one {
   position: relative;
   z-index: 1;
+  margin-bottom: 7px;
 }

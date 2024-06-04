@@ -1,5 +1,5 @@
 const switchThemeBtnEl = document.querySelector('.switch-btn');
-const iconsUrl = '../img/icons.svg';
+import iconsUrl from '../img/icons.svg';
 
 export const onSwitchTheme = event => {
   switchThemeBtnEl.classList.toggle('dark-on');

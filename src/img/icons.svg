@@ -23,6 +23,12 @@
 <symbol id="tech-skills-black-square-icon" viewBox="0 0 9 9" fill="none" >
 <rect width="8" height="8" rx="2" transform="matrix(-0.999391 -0.0348994 -0.0348994 0.999391 8.65234 0.371094)" fill="#292929"/>
 </symbol>
+<symbol id="tech-skills-dark-green-square-icon" viewBox="0 0 9 9" fill="none" >
+<rect width="8" height="8" rx="2" transform="matrix(-0.999391 -0.0348994 -0.0348994 0.999391 8.65234 0.371094)" fill="#14C57C"/>
+</symbol>
+<symbol id="tech-skills-dark-white-square-icon" viewBox="0 0 9 9" fill="none" >
+<rect width="8" height="8" rx="2" transform="matrix(-0.999391 -0.0348994 -0.0348994 0.999391 8.65234 0.371094)" fill="#F0F0F0"/>
+</symbol>
 
 <!-- My projects -->
 <symbol id="my-projects-arrow" viewBox="0 0 18 18" fill="none" >
@@ -76,6 +82,22 @@
 <symbol id="reviews-grey-btn-prev" viewBox="0 0 32 32">
   <path fill="none" stroke="#ccc" style="stroke: var(--color1, #ccc)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M26.667 16h-21.333"></path>
   <path fill="none" stroke="#ccc" style="stroke: var(--color1, #ccc)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M13.333 24l-8-8 8-8"></path>
+</symbol>
+<symbol id="reviews-white-btn-next" viewBox="0 0 24 24" fill="none" >
+  <path d="M4 12H20" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M14 6L20 12L14 18" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol>
+<symbol id="reviews-white-btn-prev" viewBox="0 0 24 24" fill="none" >
+  <path d="M20 12H4.00001" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M10 18L4 12L10 6" stroke="#F0F0F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol>
+<symbol id="reviews-dark-grey-btn-next" viewBox="0 0 24 24" fill="none" >
+  <path d="M4 12H20" stroke="#383A3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M14 6L20 12L14 18" stroke="#383A3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol>
+<symbol id="reviews-dark-grey-btn-prev" viewBox="0 0 32 32">
+  <path fill="none" stroke="#383A3D" style="stroke: var(--color1, #383A3D)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M26.667 16h-21.333"></path>
+  <path fill="none" stroke="#383A3D" style="stroke: var(--color1, #383A3D)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M13.333 24l-8-8 8-8"></path>
 </symbol>
 
 <!-- Work together -->

@@ -22,7 +22,8 @@
   background-image: url(../img/hero/decor-mob-up-blur-1x-min.png),
     url(../img/hero/decor-mob-down-blur-1x-min.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: top right, right bottom 72px;
+  background-position: top right, right bottom 74px;
+  padding-bottom: 43px;
 }
 .hero-img-desk {
   display: none;
@@ -136,10 +137,9 @@
       url(../img/hero/decor-hero-down-tab-1x.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top right, left 184px bottom 68px;
+    padding-bottom: 80px;
   }
-  .hero-row {
-    margin-bottom: 80px;
-  }
+
   .hero-title {
     font-size: 136px;
     line-height: 115%;
@@ -153,7 +153,6 @@
   .hero-button-order {
     font-size: 20px;
     line-height: 160%;
-    margin-left: 76px;
   }
   .hero-button-bg {
     border-radius: 16px;
@@ -178,11 +177,12 @@
     background-image: url(../img/hero/decor-hero-up-desk-1x.png),
       url(../img/hero/decor-hero-down-desk-1x.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: right 32px top 18px, left 204px bottom 16px;
+    background-position: right 32px top 18px, left 204px bottom 44px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 168px;
     gap: 0;
+    padding-bottom: 132px;
   }
   .hero-container {
     padding-top: 16px;
@@ -201,7 +201,6 @@
     display: flex;
     flex-flow: row;
     padding-top: 80px;
-    padding-bottom: 16px;
     padding-left: 72px;
   }
   .hero-moto-text {

@@ -8,13 +8,33 @@ export const onSwitchTheme = event => {
   const icons = document.querySelectorAll('.use-acardion');
   const upIconsSkills = document.querySelectorAll('.up-line-icon');
   const downIconsSkills = document.querySelectorAll('.down-line-icon');
+  const prevBtnRevi = document.querySelector('.arrow-revi-prev');
+  const nextBtnRevi = document.querySelector('.arrow-revi-next');
+
+  let prevBtn;
+  if (document.body.classList.contains('body-dark')) {
+    prevBtn = 'reviews-dark-grey-btn-prev';
+    prevBtnRevi.setAttribute('href', `${iconsUrl}#${prevBtn}`);
+  } else {
+    prevBtn = 'reviews-grey-btn-prev';
+    prevBtnRevi.setAttribute('href', `${iconsUrl}#${prevBtn}`);
+  }
+
+  let nextBtn;
+  if (document.body.classList.contains('body-dark')) {
+    nextBtn = 'reviews-white-btn-next';
+    nextBtnRevi.setAttribute('href', `${iconsUrl}#${nextBtn}`);
+  } else {
+    nextBtn = 'reviews-black-btn-next';
+    nextBtnRevi.setAttribute('href', `${iconsUrl}#${nextBtn}`);
+  }
 
   icons.forEach(icon => {
     let iconName;
     if (document.body.classList.contains('body-dark')) {
-      iconName = 'faq-arrow-white-down-icon';
+      iconName = 'reviews-white-btn-next';
     } else {
-      iconName = 'faq-arrow-down-icon';
+      iconName = 'reviews-black-btn-next';
     }
     icon.setAttribute('href', `${iconsUrl}#${iconName}`);
   });

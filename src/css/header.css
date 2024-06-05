@@ -1,13 +1,13 @@
 body {
   transition: background-color 300ms;
 }
-.body-dark  {
+.body-dark {
   background-color: var(--main-black-color);
-  color:  var(--light-gray-color);
+  color: var(--light-gray-color);
 }
 
-.no-scroll{
-overflow: hidden;  
+.no-scroll {
+  overflow: hidden;
 }
 
 .header-container {
@@ -17,24 +17,24 @@ overflow: hidden;
 }
 
 .left-part {
- margin-top: 20px;
+  margin-top: 20px;
 }
 
 .right-part {
- margin-top: 20px;
+  margin-top: 20px;
   margin-right: 0;
 }
 .header-link-logo {
-width: 180px;
-height: 24px;
-font-family: var(--second-family);
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 24px;
-letter-spacing: 1.5px;
-text-transform: uppercase;
-color: var(--main-black-color);
+  width: 180px;
+  height: 24px;
+  font-family: var(--second-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--main-black-color);
 }
 
 .header-link-logo-text {
@@ -45,11 +45,10 @@ color: var(--main-black-color);
   display: none;
 }
 
-
 .burger-menu {
   width: 32px;
   height: 32px;
-  background-color:transparent;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
@@ -63,8 +62,8 @@ color: var(--main-black-color);
   right: 20px;
   display: none;
   width: 32px;
-  height:32px;
-  background-color:transparent;
+  height: 32px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
@@ -84,9 +83,9 @@ color: var(--main-black-color);
   z-index: 10;
   top: 64px;
   width: 100%;
-  max-width: 360px;
+  /* max-width: 360px; */
   height: 100vh;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   transition: opacity 300ms linear, visibility 300ms linear;
 }
 
@@ -95,113 +94,118 @@ color: var(--main-black-color);
 }
 
 .menu-container {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   height: 704px;
-  background: url("/img/header/decor-header-modal-down-mob-1x.png");
+  background: url('/img/header/decor-header-modal-down-mob-1x.png');
   background-repeat: no-repeat;
   top: 0;
   transform: translateX(auto) scale(1);
   transition: transform 300ms linear;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; */
 }
 
 .mob-menu-list {
-text-align: center;
-margin-top: 292px;
+  text-align: center;
+  margin-top: 292px;
 }
 
-.mob-menu-item:not(:last-child)  {
+.mob-menu-item:not(:last-child) {
   margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {
   .header-container {
-   width: 100%;
-   height: 96px;
+    width: 100%;
+    height: 96px;
   }
 
-  .backdrop{
+  .backdrop {
     visibility: hidden;
   }
 
   .burger-menu {
-      visibility: hidden;
-   }
-
-   .modal-close{
     visibility: hidden;
-   }
+  }
 
-   .left-part {
+  .modal-close {
+    visibility: hidden;
+  }
+
+  .left-part {
     margin-top: 32px;
-   }
-   
-   .right-part {
-    margin-top: 36px;
-     margin-right: 0;
-   }
+  }
 
-   .header-link-logo {
+  .right-part {
+    margin-top: 36px;
+    margin-right: 0;
+  }
+
+  .header-link-logo {
     width: 233px;
     height: 32px;
     font-size: 32px;
     line-height: 32px;
-    }
+  }
 
-.header-nav {
-  display: block;
-}
+  .header-nav {
+    display: block;
+  }
 
-.header-nav-list {
-  display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  align-items: center;
-}
+  .header-nav-list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.header-nav-link {
-  font-weight: 300;
-}
-
+  .header-nav-link {
+    font-weight: 300;
+  }
 }
 @media screen and (min-width: 1280px) {
   .switch-btn {
     display: inline-block;
     border-radius: 16px;
     width: 48px;
-    height: 24px; 
-    background: var(--light-gray-color); 
+    height: 24px;
+    background: var(--light-gray-color);
     z-index: 0;
     margin: 0;
     padding: 0;
     border: none;
     cursor: pointer;
     position: relative;
-    transition-duration: 300ms; 
+    transition-duration: 300ms;
   }
-  
+
   .switch-btn::after {
-    content: "";
-    background-color: var(--main-green-color); 
-    height: 20px; 
-    width: 20px; 
+    content: '';
+    background-color: var(--main-green-color);
+    height: 20px;
+    width: 20px;
     border-radius: 10px;
-    top: 2px; 
-    left: 2px; 
-    transition: left 300ms; 
+    top: 2px;
+    left: 2px;
+    transition: left 300ms;
     position: absolute;
     z-index: 1;
   }
-  
+
   .dark-on {
-    background: #2A2D32; 
+    background: #2a2d32;
   }
-  
+
   .dark-on::after {
     left: 26px;
-  
-  } 
-      
+  }
 }
-
-

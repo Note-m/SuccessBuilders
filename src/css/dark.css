@@ -44,8 +44,12 @@
   color: #14c57c;
   background: #2a2d32;
 }
+
 .body-dark .hero-social-list {
   background: #2a2d32;
+}
+.body-dark .work-together-modal-second {
+  color: #2a2d32;
 }
 
 .body-dark .btn-next,
